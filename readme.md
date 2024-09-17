@@ -49,8 +49,8 @@ pip install -r requirements.txt
 Ensure you have set the variables in the script as neccessary
 
 ```
-  _server = 'sh-dev-db-2'
-  _database = 'PeterTest'
+  _server = 'TestServer'
+  _database = 'MyTestDB'
   _table_name = 'TestCSV'
   _username = None
   _password = None
