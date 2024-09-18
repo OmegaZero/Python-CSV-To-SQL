@@ -8,9 +8,6 @@ def load_csv_to_sql(file_path):
   
   ODBC_DRIVER='ODBC Driver 17 for SQL Server'
 
-  # Load the CSV into a pandas DataFrame
-  df = pd.read_csv(file_path, header=None, names=['ID', 'First Name', 'Last Name', 'Address'])
-
   # Create the connection string for SQLAlchemy
   if _username and _password:
       conn_str = f"mssql+pyodbc://{_username}:{_password}@{_server}/{_database}?driver={ODBC_DRIVER}"
